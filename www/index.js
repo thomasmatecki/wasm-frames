@@ -32,14 +32,14 @@ function init() {
                         sourceCanvas.width = frame.width;
                         sourceCanvas.height = frame.height;
                         sourceCtx.drawImage(frame, 0, 0);
-                        let r = wasm.add_one(3);
 
-                        //wasm.process_image(
-                        //    sourceCtx,
-                        //    targetCtx,
-                        //    frame.width,
-                        //    frame.height
-                        //);
+                        wasm.process_image(
+                            sourceCtx,
+                            targetCtx,
+                            frame.width,
+                            frame.height
+                        );
+
                         //const imageData = sourceCtx.getImageData(0, 0, sourceCanvas.width, sourceCanvas.height);
 
                     }).catch(err => {
