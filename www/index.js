@@ -47,7 +47,7 @@ function init() {
                         console.error('grabFrame() failed: ', err)
                     });
                 }
-            }, 80);
+            }, 100);
 
         },
         error => {
